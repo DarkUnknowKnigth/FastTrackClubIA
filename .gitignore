@@ -12,8 +12,9 @@ env/
 .pytest_cache/
 
 # Data and Outputs (AI Module)
-telemetry_ai/data/*.json
-telemetry_ai/output/
+data/*.json
+output/
+saved_model/
 
 # macOS / OS specific
 .DS_Store
