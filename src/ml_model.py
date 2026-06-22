@@ -165,6 +165,7 @@ class TelemetryMLModel:
         print(f"Identified {len(grouped)} distinct tracks.")
         
         for track_id, track_sessions in grouped.items():
+            track_id = int(track_id)
             print(f"--- Processing Track ID {track_id} ({len(track_sessions)} sessions) ---")
             tm = TrackModel(track_id)
             tm.train(track_sessions, epochs=epochs, batch_size=batch_size)

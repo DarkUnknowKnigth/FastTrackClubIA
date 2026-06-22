@@ -1,0 +1,8 @@
+tensorflow
+pandas
+numpy
+folium
+pydantic
+jinja2
+scikit-learn
+pytest
