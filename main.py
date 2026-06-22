@@ -76,8 +76,12 @@ def main():
                     'pilot': profile.pilotName,
                     'distance': session.distanceMeters,
                     'maxSpeed': session.maxSpeed,
+                    'maxAccel': float(max((abs(pt.accel) for pt in session.telemetry), default=0.0)),
                     'map_file': map_filename,
-                    'report': report
+                    'report': report,
+                    'telemetry_speed': [float(pt.speedKmh) for pt in session.telemetry],
+                    'telemetry_accel': [float(pt.accel) for pt in session.telemetry],
+                    'telemetry_labels': [i for i in range(len(session.telemetry))]
                 })
                 
         # Generate Frontend SPA
