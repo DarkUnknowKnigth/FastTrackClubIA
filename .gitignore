@@ -1,0 +1,26 @@
+# Python / Virtual Environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.env
+
+# Testing
+.pytest_cache/
+
+# Data and Outputs (AI Module)
+telemetry_ai/data/*.json
+telemetry_ai/output/
+
+# macOS / OS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.idea/
+.vscode/
+*.swp
